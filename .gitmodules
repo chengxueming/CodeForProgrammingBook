@@ -1,0 +1,6 @@
+[submodule "php7book"]
+	path = php7book
+	url = git@github.com:chengxueming/php7book.git
+[submodule "csapp"]
+	path = csapp
+	url = git@github.com:chengxueming/csapp.git
