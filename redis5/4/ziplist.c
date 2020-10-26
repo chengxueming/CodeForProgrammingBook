@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
     int a = 1;
     // gcc -E m.cpp -o m.i
     memrev32ifbe(&a);
-    panic("%s %d\n", "some wrong", 1);
+    panic("%s %d %u %u\n", "some wrong", 1, sizeof(long long), sizeof(long));
     printf("no more");
     return 0;
 }
