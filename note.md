@@ -16,3 +16,12 @@ https://blog.csdn.net/zong596568821xp/article/details/81134406
 [cxm@study libtool]$ libtool --mode=compile gcc -c main.c // 我们还是要先为 main.c 建立 Libtool 对象文件，这和前面的方法一样 :
 [cxm@study libtool]$ libtool --mode=link gcc -o main main.lo /tmp/libcompress.la // 我们也可以直接使用 libcompress.a 或者 libcompress.so，但是使用 Libtool 更加简单，因为它会将帮助你解决依赖关系，例如我们的 libcompress 依赖 libz。
 ```
+
+## 2020年12月20日
+https://time.geekbang.org/column/article/143245
+> 把epoll的程序完善了一下
+问题：
+- 1.为什么要用非阻塞io来read，还要不断重试
+- 2.EPOLLOUT 怎么用（这里直接write可能失败，可能阻塞）
+TODO
+- [ ] 用redis那个ae函数重写接受请求模块
